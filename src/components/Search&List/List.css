@@ -1,0 +1,46 @@
+.list-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-card{
+    flex-basis: 25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    font-family: 'Roboto',
+    'sans-serif';
+}
+.list-card img{
+    width: 100%;
+}
+.list-card h4{
+    padding: 1.2rem 0 1.2rem 1.2rem;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+}
+.list-card p{
+    font-weight: 600;
+}
+.list-card-data-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    color: grey;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .list-card {
+        flex-basis: 18rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    h1{
+        text-align: center;
+    }
+    .list-card {
+        flex-basis: 15rem;
+    }
+}
